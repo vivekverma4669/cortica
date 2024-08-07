@@ -1,0 +1,20 @@
+db.foods.insertMany([
+  {
+    "type": "Pizza",
+    "content": "A delicious cheese pizza topped with fresh basil and tomato sauce.",
+    "price": 399,
+    "imageUrl": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg"
+  },
+  {
+    "type": "Burger",
+    "content": "A juicy beef burger with lettuce, tomato, and cheese, served with fries.",
+    "price": 299,
+    "imageUrl": "https://honest-food.net/wp-content/uploads/2018/06/elk-burger.jpg"
+  },
+  {
+    "type": "Pasta",
+    "content": "Creamy Alfredo pasta with grilled chicken and Parmesan cheese.",
+    "price": 349,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEQ9IjUOFn8JxtVzjj2KKdg9pcgi0fh7NBrQ&s"
+  }
+]);
