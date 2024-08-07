@@ -63,7 +63,7 @@ nav .menu {
 nav .menu span {
   height: 0.4rem;
   width: 100%;
-  background-color: #fff;
+  background-color: #1b0404;
   border-radius: 0.2rem;
 }
 
@@ -97,6 +97,9 @@ nav .menu span {
       text-align: center;
   }
 
+  .cart{
+    display: none;
+  }
   nav ul li a {
       margin: 0.2rem 0.5rem;
   }

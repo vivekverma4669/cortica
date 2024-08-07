@@ -39,7 +39,7 @@ import 'react-toastify/dist/ReactToastify.css';
         </ul>
 
 
-       <span>
+       <span className="cart">
        <NavLink to="/cart"> <img src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" width="60px"></img>
        </NavLink>
        
