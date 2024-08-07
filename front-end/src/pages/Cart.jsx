@@ -11,7 +11,7 @@ const Cart = () => {
 
   const fetchCart = async () => {
     try {
-      const response = await axios.get('http://localhost:7000/cart');
+      const response = await axios.get('https://cortica.onrender.com/cart');
       setCart(response.data);
       console.log(response.data);
     } catch (error) {
@@ -21,7 +21,7 @@ const Cart = () => {
 
   const removeFromCart = async (itemId) => {
     try {
-      await axios.delete(`http://localhost:7000/cart/${itemId}`);
+      await axios.delete(`https://cortica.onrender.com/cart/${itemId}`);
       fetchCart(); // Refresh the cart items
     } catch (error) {
       console.error('Error removing item from cart:', error);

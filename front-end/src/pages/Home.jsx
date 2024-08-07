@@ -13,7 +13,7 @@ const Home = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:7000/foods');
+      const response = await axios.get('https://cortica.onrender.com/foods');
       setFoods(response.data);
     } catch (error) {
       console.error('Error fetching foods:', error);
@@ -23,7 +23,7 @@ const Home = () => {
 
   const addToCart = async (itemId) => {
     try {
-      const response = await axios.post('http://localhost:7000/cart', { itemId, quantity: 1 });
+      const response = await axios.post('https://cortica.onrender.com/cart', { itemId, quantity: 1 });
       console.log('Item added to cart:', response.data);
       alert('food added into cart')
     } catch (error) {
