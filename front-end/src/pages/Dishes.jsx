@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Dishes = () => {
   const [foods, setFoods] = useState([]);
@@ -20,7 +23,7 @@ const Dishes = () => {
     try {
       const response = await axios.post('https://cortica.onrender.com/cart', { itemId, quantity: 1 });
       console.log('Item added to cart:', response.data);
-      alert('food added into cart')
+      toast.success('Food added to cart successfully 🎉');
     } catch (error) {
       console.error('Error adding to cart:', error);
     }
@@ -31,7 +34,10 @@ const Dishes = () => {
   }, []);
 
   return (
+    
     <div style={{ alignItems: 'center', textAlign: 'center' }}>
+       <ToastContainer/>
+
       <h2>Customize your lunch according to your taste</h2>
       <div className="post container">
         {!loading ? (

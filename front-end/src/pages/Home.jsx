@@ -3,6 +3,9 @@ import axios from 'axios';
 import '../style/hf.css'
 import img2 from '../images/img2.jpg'
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Home = () => {
 
@@ -25,7 +28,7 @@ const Home = () => {
     try {
       const response = await axios.post('https://cortica.onrender.com/cart', { itemId, quantity: 1 });
       console.log('Item added to cart:', response.data);
-      alert('food added into cart')
+      toast.success('Food added to cart successfully 🎉');
     } catch (error) {
       console.error('Error adding to cart:', error);
     }
@@ -47,7 +50,7 @@ const Home = () => {
 </section>
 
 
-
+<ToastContainer/>
 <section className="about container" id="about" >
     <div className="contentBx">
         <h2 className="titleText">Catch up with </h2>

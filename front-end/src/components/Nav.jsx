@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "../style/Nav.css";
 import { Link, NavLink } from "react-router-dom";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
  const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   
   return ( 
     <nav>
+     
       <Link to="/" className="title">
       
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrG7kAyZGkydKI5bw5rb8pHm5usBqER1KsLXqGm-zb3_n9JqAO6YOY9qq8LghYtuOmzZQ&usqp=CAU" alt='logo ' style={{height: "80px"}}/>
