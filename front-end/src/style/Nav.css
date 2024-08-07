@@ -11,11 +11,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #032438;
+  background-color: #ffffff;
   color: white;
   position: sticky;
   top: 0;
   padding: -10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 nav .title {
@@ -37,14 +38,15 @@ nav ul li {
 nav ul li a {
   display: block;
   text-decoration: none;
-  color: white;
+  /* color: white; */
+  color: black;
   padding: 0.5rem;
   margin: 0 0.5rem;
   border-radius: 0.5rem;
 }
 
 nav ul li a:not(.active):hover {
-  background-color:#172554 ;
+ border :2px solid #172554 ;
 }
 
 nav .menu {

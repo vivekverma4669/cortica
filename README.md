@@ -11,6 +11,9 @@
       <li><a href="#license">License</a></li>
     </ul>
     
+  <img src="./front-end/src/images/Screenshot (5).png">
+  <img src="./front-end/src/images/Screenshot (6).png">
+  <!-- <img src=""> -->
   <h2>Features</h2>
     <ul>
       <li>Display a list of food items.</li>
